@@ -1,2 +1,11 @@
-<tytle>TOINPentagon公式Web<tytle>
-<img src="X.png" href="https://x.com/5_Pentagons">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOINPentagon公式Web<title>
+</head>
+<body>
+    <a href="https://x.com/5_Pentagons">
+         <img src="X.png">
+    </a>
+</body>
+</html>

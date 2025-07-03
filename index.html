@@ -10,14 +10,14 @@
             height:200px;
             background:url("wave.svg");
             background-size:cover;
-            animation:wave 10s liner infinite;
+            animation:wave 10s linear infinite;
             z-index:-1;
             opacity:0.5;
         }
 
         @keyframes wave{
             0%{
-                translateX(0);
+                transform:translateX(0);
             }
             100%{
                 transform:translateX(-50%);
@@ -30,7 +30,7 @@
             font-size:None;
             background-color:rgba(255,255,255,0.7);
             padding:4px 8px;
-            border-redius:5px;
+            border-radius:5px;
             z-index:9999;
         }
         img.zoom{
@@ -62,7 +62,7 @@
             background-repeat: no-repeat;
             background-attachment:fixed;
         }
-        html.body{
+        html,body{
             height:100%;
         }
     </style>
@@ -85,7 +85,7 @@
     <h4>toinpentagon@gmail.com</h4>
     <div class="wave-background"></div>
     <div class="end-tag">
-        <h9>Ver 1.0.2 | 2025/07/03</h9>
+        <h6>Ver 1.0.2 | 2025/07/03</h6>
     </div>
 </body>
 </html>

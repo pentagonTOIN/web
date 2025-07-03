@@ -2,6 +2,12 @@
 <html>
 <head>
     <style>
+        img.zoom{
+            transition:transform 0.3s ease;
+        }
+        img.zoom:hover{
+            transform:scale(1.1);
+        }
         /*アニメーション定義*/
         @keyframes fadeIn{
             from{
@@ -40,7 +46,7 @@
     </a>
     <hr>
     <a href="https://x.com/5_Pentagons">
-         <img src="X.png" alt="X" width="150">
+         <img src="X.png" alt="X" class="zoom" width="150">
     </a>
     <h4>⇧公式X</h4>
     <br>

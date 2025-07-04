@@ -12,5 +12,5 @@ fetch("https://api.github.com/repos/pentagonTOIN/web/commits")
   })
   .catch(error=>{
     console.error("取得失敗：",error);
-    document.getElementByTd("last-updated").textContent="最終更新日：取得失敗";
+    document.getElementById("last-updated").textContent="最終更新日：取得失敗";
   });

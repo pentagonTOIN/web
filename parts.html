@@ -97,7 +97,18 @@
         }
     </style>
 </head>
-<body>
+<body class="zoom-enabled">
+    <button class="toggle-btn" onclick="toggleZoom()">拡大：ON</button>
+    <script>
+        let zoomEnabled=true;
+
+        function toggleZoom(){
+            zoomEnabled=!zoomEnabled;
+            document.body.classList.toggle("zoom-enabled",zoomEnabled);
+            cust btn=document.querySelector(".toggle-btn");
+            btn.textContent="拡大："+(zoomEnabled ? "ON"："OFF");
+        }
+    </script>
     <div class="section-box">
         <a id="top"></a>
         <h2>6月30日</h2>

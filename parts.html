@@ -100,14 +100,24 @@
 <body class="zoom-enabled">
     <button class="toggle-btn" onclick="toggleZoom()">拡大：ON</button>
     <script>
-        let zoomEnabled=true;
+        // 初期状態をlocalStorageから取得（なければtrue＝ON）
+        let zoomEnabled = localStorage.getItem("zoomEnabled") === "false" ? false : true;
 
-        function toggleZoom(){
-            zoomEnabled=!zoomEnabled;
-            document.body.classList.toggle("zoom-enabled",zoomEnabled);
-            const btn=document.querySelector(".toggle-btn");
-            btn.textContent="拡大："+(zoomEnabled ? "ON":"OFF");
-        }
+        // 初期状態を反映
+        document.body.classList.toggle("zoom-enabled", zoomEnabled);
+
+        // ボタンを取得して表示更新
+        window.addEventListener("DOMContentLoaded", () => {
+            const btn = document.querySelector(".toggle-btn");
+            btn.textContent = "拡大：" + (zoomEnabled ? "ON" : "OFF");
+
+            btn.addEventListener("click", () => {
+                zoomEnabled = !zoomEnabled;
+                document.body.classList.toggle("zoom-enabled", zoomEnabled);
+                btn.textContent = "拡大：" + (zoomEnabled ? "ON" : "OFF");
+                localStorage.setItem("zoomEnabled", zoomEnabled); // ← 保存！
+            });
+        });
     </script>
     <div class="section-box">
         <a id="top"></a>

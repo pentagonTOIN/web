@@ -1,7 +1,7 @@
-document.addEventListener("DOMContenLoaded",function(){
-    fetch("naver.html")
-    .then(respone => respone.text())
+document.addEventListener("DOMContentLoaded",function(){
+    fetch("navber.html")
+    .then(response => response.text())
     .then(data=>{
-        document.getElementById("navbar-cotainer").innerHTML=data;
+        document.getElementById("navbar-container").innerHTML=data;
     });
 });

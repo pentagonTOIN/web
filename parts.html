@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="navbar.js" defer></script>
         <title>最新情報-Pentagon</title>
         <link rel=icon type="image/png" href="icon.png" >
         <style>
+            /* style.css */
+            .navbar {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                background-color: #333;
+                padding: 10px 0;
+            }
+            
+            .nav-item {
+                color: white;
+                padding: 10px 20px;
+                background-color: #555;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            
+            .nav-item:hover {
+               background-color: #777;
+            }
             /*切り替えボタンのスタイル*/
             .toggle-btn{
                 position:fixed;
@@ -120,6 +141,7 @@
             });
         </script>
     <a id="top"></a>
+        <div id="navbar-container"></div>
         <div class="section-box">
             <h2>7月23日</h2>
             <table>

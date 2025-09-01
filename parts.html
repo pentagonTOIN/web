@@ -136,6 +136,18 @@
     </head>
     <body class="zoom-enabled">
         <button class="toggle-btn" onclick="toggleZoom()">拡大：ON</button>
+        <div class="navbar">
+          <div class="logo">
+            <img src="icon.png" alt="Pentagon" width="40">
+            <span>TOINPentagon</span>
+          </div>
+          <div class="nav-links">
+            <a href="parts.html" class="nav-item">最新情報</a>
+            <a href="https://x.com/5_Pentagons" class="nav-item">公式X</a>
+            <a href="mailto:toinpentagon@gmail.com" class="nav-item">連絡先</a>
+          </div>
+        </div>
+
         <script>
             // 初期状態をlocalStorageから取得（なければtrue＝ON）
             let zoomEnabled = localStorage.getItem("zoomEnabled") === "false" ? false : true;

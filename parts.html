@@ -17,6 +17,18 @@
                 display: flex;
                 gap: 15px;
             }
+            .nav-links button{
+                background-color:#555;
+                color:white;
+                border:none;
+                border-radius:8px;
+                font-size:24px;
+                padding:12px 20px;
+                cursor:pointer;
+            }
+            .nav-links button:hover{
+                background-color:#777;
+            }
             .navbar {
                 display: flex;
                 justify-content:space-between;
@@ -156,7 +168,6 @@
         </style>
     </head>
     <body class="zoom-enabled">
-        <button class="toggle-btn" onclick="toggleZoom()">拡大：ON</button>
         <div class="navbar">
           <div class="logo">
             <img src="icon.png" alt="Pentagon" width="40">
@@ -167,6 +178,7 @@
             <a href="parts.html" class="nav-item">最新情報</a>
             <a href="https://x.com/5_Pentagons" class="nav-item">公式X</a>
             <a href="mailto:toinpentagon@gmail.com" class="nav-item">連絡先</a>
+            <button id="zoom-toggle" class="nav-item">拡大：ON</button>
           </div>
           <div class="hamburger" id="hamburger">☰</div>
         </div>

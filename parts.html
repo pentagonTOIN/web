@@ -282,5 +282,13 @@
             <div id="last-updated">最終更新日：取得中…</div>
             <script src="last-updated.js"></script>
         </div>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+    
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+    </script>
     </body>
 </html>
